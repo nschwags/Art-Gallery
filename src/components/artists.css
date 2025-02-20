@@ -1,0 +1,31 @@
+.artist-list {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
+.artist-list ul {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.artist-list li {
+  padding: 1% 0%;
+  font-size: 2rem;
+}
+
+.artist-list a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.artist-list a:visited {
+  color: inherit;
+}
+
+.artist-list a:hover {
+  background-color: #848fa5;
+}
