@@ -1,0 +1,98 @@
+/* Modal Overlay */
+.modal-content {
+  display: flex;
+  background: #e5dcc5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60vw;
+  height: 60vh;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10000;
+}
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Image */
+.modal-content img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Description */
+.image-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 60%;
+  height: 50%;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.image-desc > * {
+  border-bottom: 2px solid black;
+}
+
+/* Small Screens (tablets) */
+@media (max-width: 1024px) {
+  .modal-content {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    padding: 15px;
+  }
+  .modal-content img {
+    width: 100%;
+    max-height: 40vh;
+    margin-bottom: 10px;
+  }
+  .image-desc {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+/* Extra Small Screens (mobiles) */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95vw;
+    padding: 10px;
+  }
+  .close-button {
+    top: 5px;
+    right: 10px;
+    font-size: 16px;
+  }
+  .modal-content img {
+    max-height: 30vh;
+  }
+  .image-desc {
+    padding: 5px 0;
+  }
+}
