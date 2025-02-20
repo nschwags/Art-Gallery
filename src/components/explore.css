@@ -77,21 +77,6 @@
   background-color: #848fa5;
 }
 
-.skeleton {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25vw;
-  min-height: 30vh;
-  max-height: 50vh;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #e5dcc5;
-  box-shadow: #b3ab98 3px 4px 5px 3px;
-}
-
 /*Large screens*/
 @media (max-width: 1440px) {
   .department-list {
