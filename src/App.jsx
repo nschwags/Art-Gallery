@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Explore from "./components/Explore";
 import ExploreDept from "./components/ExploreDept";
@@ -13,6 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Navigate to="/explore" replace />} />
         <Route path="/explore" element={<Explore />}></Route>
         <Route path="/explore/:departmentId" element={<ExploreDept />}></Route>
         <Route path="/artists" element={<Artists />}></Route>
