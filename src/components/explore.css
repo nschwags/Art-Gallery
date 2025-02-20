@@ -19,9 +19,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20vw;
-  min-height: 30vh;
-  max-height: 50vh;
+  width: min(22vw, 300px);
+  aspect-ratio: 3 / 2;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -37,7 +36,7 @@
 
 .department-card img {
   width: 100%;
-  max-height: 25vh;
+  max-height: 90%;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -46,10 +45,6 @@
   font-size: 16px;
   margin-top: 10px;
   width: 100%;
-}
-
-.department-card:hover h2 {
-  font-size: 1.2rem;
 }
 
 .pagination {
@@ -97,48 +92,46 @@
   box-shadow: #b3ab98 3px 4px 5px 3px;
 }
 
-@media (max-width: 1920px) {
+/*Large screens*/
+@media (max-width: 1440px) {
   .department-list {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .department-card {
     width: 25vw;
-    /* max-height: 30vh; */
   }
 }
 
+/*Medium screens*/
 @media (max-width: 1080px) {
-  .department-card {
-    min-height: 20vh;
+  .department-list {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .department-card img {
-    max-height: 15vh;
+  .department-card {
+    width: 40vw;
   }
 }
 
+/*Small screens*/
 @media (max-width: 768px) {
   .department-title {
     font-size: 2rem;
   }
+}
 
+/*Tiny screens*/
+@media (max-width: 480px) {
   .department-list {
     grid-template-columns: 1fr;
   }
 
-  .department-card {
-    width: 80vw;
-    max-height: 30vh;
-  }
-
-  .department-card img {
-    max-height: 20vh;
-  }
-}
-
-@media (max-width: 480px) {
   .department-title {
     font-size: 1.5rem;
+  }
+
+  .department-card {
+    width: 80vw;
   }
 }
