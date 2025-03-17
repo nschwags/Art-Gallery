@@ -1,8 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Art Gallery
 
-Currently, two official plugins are available:
+A simple website displaying artworks from the Met Museum powered by their public API.  This site features over 400k pieces of art throughout history.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Live Site
+https://artgallery.schwagdev.com
+## Features
+
+- Browse through departments
+- Browse through artists
+- Search for artists/works
+- Mobile friendly
+
+
+## Tech Stack
+
+**Client:** React, Axios, CSS
+
+**Server:** Node, Express
+
+
+## Authors
+
+- [@nschwags](https://www.github.com/nschwags)
+
